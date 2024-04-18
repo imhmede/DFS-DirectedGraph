@@ -1,0 +1,59 @@
+<!--
+    Ant Script: build.xml
+    
+    Description:
+    This Ant script automates the compilation and execution of a Java project
+    implementing the QuickSort algorithm to sort an array and performing Binary 
+    search for a number provided by the user. The script compiles the Java classes, 
+    creates a JAR file named "Main.jar" containing the compiled classes, and specifies 
+    the main class as 'src.main.app.Runner' in the manifest file for executable purposes.
+
+    Author: Essa Imhmed
+
+    Creation Date: 2024-03-25
+-->
+
+<project name="JavaProject" basedir="." default="run">
+
+    <!-- Define properties -->
+    <property name="src.dir" location="src" />
+    <property name="build.dir" location="build" />
+    <property name="main.class" value="src.main.app.Runner" />
+
+    <!-- Define targets -->
+    <target name="clean">
+        <!-- Delete the classes directory -->
+        <delete dir="${build.dir}" />
+    </target>
+
+    <target name="init" depends="clean">
+        <!-- Create the classes directory if it doesn't exist -->
+        <mkdir dir="${build.dir}/classes" />
+        <mkdir dir="${build.dir}/jar" />
+    </target>
+
+    <target name="compile" depends="init">
+        <!-- Compile Java files -->
+        <javac srcdir="${src.dir}" destdir="${build.dir}/classes" includeantruntime="false">
+            <classpath>
+                <pathelement path="${classes.dir}" />
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="jar" depends="compile">
+        <!-- creates a JAR (Java Archive) -->
+        <jar destfile="${build.dir}/jar/Main.jar" basedir="${build.dir}/classes">
+            <manifest>
+                <attribute name="Main-Class" value="src.main.app.Runner"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="jar">
+        <!-- Run the Java program -->
+        <java jar="${build.dir}/jar/Main.jar" fork="true" />
+    </target>
+
+</project>
+
