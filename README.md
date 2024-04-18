@@ -1,6 +1,6 @@
 # Depth-first search in directed graphs
 
-This repository contains a sample Java program that demonstrates how to perform Depth-first search (DFS) in directed graphs. The program is constructed using multiple Java files and is automated using an Ant script.
+This a sample Java program that demonstrates how to perform Depth-first search (DFS) in directed graphs. The program is constructed using multiple Java files, and the program compilation and execution are automated using an Ant script.
 
 ## Files
 
