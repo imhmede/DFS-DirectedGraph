@@ -5,7 +5,8 @@ This repository contains a sample Java program that demonstrates how to perform 
 ## Files
 
 - **Graph.java**: This file contains two main functionalities:
-    - Generating a graph based on user input.
+    - Generating a graph.
+      -- Generating a graph involves encoding the graph's nodes and edges within the method. You may need to manually modify the code to encode a different graph or adjust the method to accept user input.
     - Running the Depth-first Search (DFS) algorithm on the generated graph.
 
 - **Node.java**: This file is a data structure utilized by `Graph.java` to construct the graph.
