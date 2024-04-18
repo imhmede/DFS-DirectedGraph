@@ -17,8 +17,12 @@ This a sample Java program that demonstrates how to perform Depth-first search (
 
 ## Requirements
 
+## Requirements
+
 - **Java JDK**: The program requires Java JDK to compile and run. Make sure you have it installed on your machine.
 - **Apache Ant**: The program is automated using an Ant script, so you need to have Apache Ant installed.
+    - To install Apache Ant, follow the instructions in the [official Apache Ant installation guide](https://ant.apache.org/manual/install.html).
+    - For a tutorial on getting started with Apache Ant, check out the [Hello World with Apache Ant guide](https://ant.apache.org/manual/tutorial-HelloWorldWithAnt.html).
 
 ## Installation
 
