@@ -1,1 +1,43 @@
-# DFS-DirectedGraph
+# Depth-first search in directed graphs
+
+This repository contains a sample Java program that demonstrates how to perform Depth-first search (DFS) in directed graphs. The program is constructed using multiple Java files and is automated using an Ant script.
+
+## Files
+
+- **Graph.java**: This file contains two main functionalities:
+    - Generating a graph based on user input.
+    - Running the Depth-first Search (DFS) algorithm on the generated graph.
+
+- **Node.java**: This file is a data structure utilized by `Graph.java` to construct the graph.
+
+- **Runner.java**: This is the main class responsible for executing the program.
+
+- **build.xml**: This is the Ant script used to automate the compilation and execution of the program.
+
+## Requirements
+
+- **Java JDK**: The program requires Java JDK to compile and run. Make sure you have it installed on your machine.
+- **Apache Ant**: The program is automated using an Ant script, so you need to have Apache Ant installed.
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+    ```bash
+    git clone <repository-url>
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd <repository-name>
+    ```
+
+3. Ensure you have the required dependencies (Java JDK and Apache Ant) installed.
+
+## Usage
+
+To execute the program, simply run the following command in the terminal/console from the project directory:
+
+```bash
+ant
